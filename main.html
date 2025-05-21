@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMLoader - Лучший лаунчер для Minecraft читов</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+        }
+        .cheat-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cheat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .review-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px rgba(110, 69, 226, 0.5);
+            }
+            to {
+                box-shadow: 0 0 20px rgba(110, 69, 226, 0.8);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-cube text-3xl"></i>
+                    <h1 class="text-3xl font-bold">DMLoader</h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://t.me/DMLoaderSuport" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition flex items-center space-x-2">
+                        <i class="fab fa-telegram"></i>
+                        <span>Поддержка</span>
+                    </a>
+                    <button onclick="window.open('https://discord.com/invite/9QTzR8uwRP', '_blank')" class="bg-indigo-800 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition flex items-center space-x-2">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">Лучший лаунчер для Minecraft читов</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Запускайте топовые читы для Minecraft с удобным интерфейсом и стабильной работой</p>
+            <button class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition glow">
+                Скачать DMLoader
+            </button>
+        </div>
+    </section>
+
+    <!-- Cheats Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">💜 Доступные читы</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Cheat Cards -->
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Nursultan</h3>
+                    </div>
+                    <p class="text-gray-300">Мощный чит с уникальными функциями</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Expensive</h3>
+                    </div>
+                    <p class="text-gray-300">Премиум чит с лучшими функциями</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Wexside</h3>
+                    </div>
+                    <p class="text-gray-300">Быстрый и надежный чит</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Celestial</h3>
+                    </div>
+                    <p class="text-gray-300">Чит с уникальным визуалом</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">VenusFree</h3>
+                    </div>
+                    <p class="text-gray-300">Бесплатный чит с отличными функциями</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Verist</h3>
+                    </div>
+                    <p class="text-gray-300">Агрессивный чит для PvP</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Wild</h3>
+                    </div>
+                    <p class="text-gray-300">Чит с нестандартными функциями</p>
+                </div>
+                
+                <div class="cheat-card bg-gray-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Excellent</h3>
+                    </div>
+                    <p class="text-gray-300">Чит с премиум качеством</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-lg">И многие другие: Minecraft Xameleon, MannikClient, NewCode, Haruka, Catlavan, KoshkaClient, NightDLC, Rogalik, LitkaClient, HachClient, Zaharov, Zovchik</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Отзывы наших пользователей</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review Cards -->
+                <div class="review-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Анонимный пользователь</h4>
+                            <p class="text-gray-400 text-sm">19.04.2025 21:30</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-200">"Всё работает, всё классно. Крутая сборка читов."</p>
+                    <div class="mt-4 flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="review-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Анонимный пользователь</h4>
+                            <p class="text-gray-400 text-sm">21.04.2025 19:45</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-200">"Лоадер афигенный почти всё топово работает не везде открывается но так в каждом лоадере так что 4 из 4/5"</p>
+                    <div class="mt-4 flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-gray-500"></i>
+                    </div>
+                </div>
+                
+                <div class="review-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Анонимный пользователь</h4>
+                            <p class="text-gray-400 text-sm">08.05.2025 16:49</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-200">"Все читы работают. Лоадер топ!"</p>
+                    <div class="mt-4 flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Частые вопросы</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 border-b border-gray-700 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Как скачать DMLoader?</h3>
+                    <p class="text-gray-300">Нажмите кнопку "Скачать DMLoader" вверху страницы и следуйте инструкциям установщика.</p>
+                </div>
+                
+                <div class="mb-6 border-b border-gray-700 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Какой версии Minecraft поддерживаются читы?</h3>
+                    <p class="text-gray-300">Большинство читов поддерживают версии от 1.8 до последней актуальной версии Minecraft.</p>
+                </div>
+                
+                <div class="mb-6 border-b border-gray-700 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Как получить помощь?</h3>
+                    <p class="text-gray-300">Вы можете обратиться в нашу <a href="https://t.me/DMLoaderSuport" target="_blank" class="text-purple-400 hover:underline">группу поддержки в Telegram</a> или на <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" class="text-purple-400 hover:underline">Discord сервер</a>.</p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Безопасен ли DMLoader?</h3>
+                    <p class="text-gray-300">Да, наш лаунчер полностью безопасен и не содержит вредоносного кода. Однако использование читов может быть запрещено на некоторых серверах.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Готовы попробовать DMLoader?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Скачайте лучший лаунчер для Minecraft читов прямо сейчас</p>
+            <button class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition glow mb-6">
+                Скачать DMLoader
+            </button>
+            <div class="flex justify-center space-x-6">
+                <a href="https://t.me/DMLoaderSuport" target="_blank" class="text-white hover:text-gray-300 text-2xl">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button onclick="window.open('https://discord.com/invite/9QTzR8uwRP', '_blank')" class="text-white hover:text-gray-300 text-2xl">
+                    <i class="fab fa-discord"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2025 DMLoader. Все права защищены.</p>
+            <p class="text-gray-500 mt-2 text-sm">Minecraft является зарегистрированной торговой маркой Mojang Studios. Мы не аффилированы с Mojang или Microsoft.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for cheat cards on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cheatCards = document.querySelectorAll('.cheat-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cheatCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
