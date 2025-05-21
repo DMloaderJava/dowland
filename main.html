@@ -28,10 +28,10 @@
         }
         @keyframes glow {
             from {
-                box-shadow: 0 0 5px rgba(110, 69, 226, 0.5);
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Adjusted glow for header button */
             }
             to {
-                box-shadow: 0 0 20px rgba(110, 69, 226, 0.8);
+                box-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Adjusted glow for header button */
             }
         }
     </style>
@@ -45,12 +45,16 @@
                     <i class="fas fa-cube text-3xl"></i>
                     <h1 class="text-3xl font-bold">DMLoader</h1>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="https://t.me/DMLoaderSuport" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition flex items-center space-x-2">
+                <div class="flex space-x-4 items-center">
+                    <button class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition glow flex items-center space-x-2 text-sm">
+                        <i class="fas fa-download mr-1"></i>
+                        <span>Скачать DMLoader</span>
+                    </button>
+                    <a href="https://t.me/DMLoaderSuport" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition flex items-center space-x-2 text-sm">
                         <i class="fab fa-telegram"></i>
                         <span>Поддержка</span>
                     </a>
-                    <button onclick="window.open('https://discord.com/invite/9QTzR8uwRP', '_blank')" class="bg-indigo-800 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition flex items-center space-x-2">
+                    <button onclick="window.open('https://discord.com/invite/9QTzR8uwRP', '_blank')" class="bg-indigo-800 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition flex items-center space-x-2 text-sm">
                         <i class="fab fa-discord"></i>
                         <span>Discord</span>
                     </button>
@@ -59,21 +63,10 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="gradient-bg py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-5xl font-bold mb-6">Лучший лаунчер для Minecraft читов</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Запускайте топовые читы для Minecraft с удобным интерфейсом и стабильной работой</p>
-            <button class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition glow">
-                Скачать DMLoader
-            </button>
-        </div>
-    </section>
-
     <!-- Cheats Section -->
     <section class="py-16 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">💜 Доступные читы</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center pt-10">💜 Доступные читы</h2> {/* Added pt-10 for some spacing */}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Cheat Cards -->
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
@@ -85,7 +78,7 @@
                     </div>
                     <p class="text-gray-300">Мощный чит с уникальными функциями</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3">
@@ -95,7 +88,7 @@
                     </div>
                     <p class="text-gray-300">Премиум чит с лучшими функциями</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center mr-3">
@@ -105,7 +98,7 @@
                     </div>
                     <p class="text-gray-300">Быстрый и надежный чит</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-3">
@@ -115,7 +108,7 @@
                     </div>
                     <p class="text-gray-300">Чит с уникальным визуалом</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center mr-3">
@@ -125,7 +118,7 @@
                     </div>
                     <p class="text-gray-300">Бесплатный чит с отличными функциями</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center mr-3">
@@ -135,7 +128,7 @@
                     </div>
                     <p class="text-gray-300">Агрессивный чит для PvP</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center mr-3">
@@ -145,7 +138,7 @@
                     </div>
                     <p class="text-gray-300">Чит с нестандартными функциями</p>
                 </div>
-                
+
                 <div class="cheat-card bg-gray-700 rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center mr-3">
@@ -156,7 +149,7 @@
                     <p class="text-gray-300">Чит с премиум качеством</p>
                 </div>
             </div>
-            
+
             <div class="mt-8 text-center">
                 <p class="text-lg">И многие другие: Minecraft Xameleon, MannikClient, NewCode, Haruka, Catlavan, KoshkaClient, NightDLC, Rogalik, LitkaClient, HachClient, Zaharov, Zovchik</p>
             </div>
@@ -167,7 +160,7 @@
     <section class="py-16 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-12 text-center">Отзывы наших пользователей</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Review Cards -->
                 <div class="review-card rounded-lg p-6">
@@ -189,7 +182,7 @@
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
                 </div>
-                
+
                 <div class="review-card rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-3">
@@ -209,7 +202,7 @@
                         <i class="fas fa-star text-gray-500"></i>
                     </div>
                 </div>
-                
+
                 <div class="review-card rounded-lg p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center mr-3">
@@ -237,23 +230,23 @@
     <section class="py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-12 text-center">Частые вопросы</h2>
-            
+
             <div class="max-w-3xl mx-auto">
                 <div class="mb-6 border-b border-gray-700 pb-6">
                     <h3 class="text-xl font-semibold mb-2">Как скачать DMLoader?</h3>
                     <p class="text-gray-300">Нажмите кнопку "Скачать DMLoader" вверху страницы и следуйте инструкциям установщика.</p>
                 </div>
-                
+
                 <div class="mb-6 border-b border-gray-700 pb-6">
                     <h3 class="text-xl font-semibold mb-2">Какой версии Minecraft поддерживаются читы?</h3>
                     <p class="text-gray-300">Большинство читов поддерживают версии от 1.8 до последней актуальной версии Minecraft.</p>
                 </div>
-                
+
                 <div class="mb-6 border-b border-gray-700 pb-6">
                     <h3 class="text-xl font-semibold mb-2">Как получить помощь?</h3>
                     <p class="text-gray-300">Вы можете обратиться в нашу <a href="https://t.me/DMLoaderSuport" target="_blank" class="text-purple-400 hover:underline">группу поддержки в Telegram</a> или на <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" class="text-purple-400 hover:underline">Discord сервер</a>.</p>
                 </div>
-                
+
                 <div class="mb-6">
                     <h3 class="text-xl font-semibold mb-2">Безопасен ли DMLoader?</h3>
                     <p class="text-gray-300">Да, наш лаунчер полностью безопасен и не содержит вредоносного кода. Однако использование читов может быть запрещено на некоторых серверах.</p>
@@ -293,7 +286,7 @@
         // Simple animation for cheat cards on scroll
         document.addEventListener('DOMContentLoaded', function() {
             const cheatCards = document.querySelectorAll('.cheat-card');
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -302,7 +295,7 @@
                     }
                 });
             }, { threshold: 0.1 });
-            
+
             cheatCards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
