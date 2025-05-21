@@ -278,7 +278,7 @@
                     <div class="faq-answer hidden bg-gray-800 bg-opacity-50 rounded-b-lg px-6 py-4">
                         <p>Вы можете обратиться за помощью следующими способами:</p>
                         <ul class="list-disc pl-6 mt-2 space-y-2">
-                            <li>Discord: <span class="text-green-400">discord.gg/DMLoader</span></li>
+                            <li>Discord: <a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="text-green-400 hover:underline">discord.gg/9QTzR8uwRP</a></li>
                             <li>Telegram: <span class="text-green-400">@DMLoader</span></li>
                             <li>Через форму обратной связи на сайте</li>
                         </ul>
@@ -299,7 +299,7 @@
                                 <i class="fab fa-discord text-3xl text-indigo-400 mr-4 mt-1"></i>
                                 <div>
                                     <h4 class="font-bold">Discord</h4>
-                                    <p class="opacity-80">discord.gg/DMLoader</p>
+                                    <p class="opacity-80"><a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="hover:underline">discord.gg/9QTzR8uwRP</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -350,12 +350,12 @@
                     <span class="text-xl font-bold">DMLoader</span>
                 </div>
                 <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
+                    <a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
                     <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-telegram"></i></a>
                     <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="text-sm opacity-70">
-                    &copy; 2023 DMLoader Team. Все права защищены.
+                    © 2023 DMLoader Team. Все права защищены.
                 </div>
             </div>
         </footer>
@@ -391,9 +391,16 @@
         });
 
         // Отправка формы (перенаправление на Telegram)
+        // Примечание: Кнопка "Отправить сообщение" является ссылкой и напрямую перенаправляет.
+        // Этот обработчик сработает, если форма будет отправлена другим способом (например, Enter в поле).
         document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            window.location.href = 'https://t.me/DMLoaderSuport';
+            e.preventDefault(); // Предотвращаем стандартную отправку формы
+            // Здесь можно было бы собрать данные формы, если бы они отправлялись куда-то перед редиректом
+            // const name = this.querySelector('input[type="text"]').value;
+            // const email = this.querySelector('input[type="email"]').value;
+            // const message = this.querySelector('textarea').value;
+            // console.log('Форма отправлена (через JS):', { name, email, message });
+            window.location.href = 'https://t.me/DMLoaderSuport'; // Перенаправляем на Telegram
         });
     </script>
 </body>
