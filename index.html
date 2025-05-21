@@ -240,7 +240,7 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden bg-gray-800 bg-opacity-50 rounded-b-lg px-6 py-4">
-                        <p>Для установка на Linux выполните следующие шаги:</p>
+                        <p>Для установки на Linux выполните следующие шаги:</p>
                         <ol class="list-decimal pl-6 mt-2 space-y-2">
                             <li>Скачайте версию для Linux (Ubuntu или универсальную)</li>
                             <li>Откройте терминал в папке с загрузкой</li>
@@ -278,7 +278,7 @@
                     <div class="faq-answer hidden bg-gray-800 bg-opacity-50 rounded-b-lg px-6 py-4">
                         <p>Вы можете обратиться за помощью следующими способами:</p>
                         <ul class="list-disc pl-6 mt-2 space-y-2">
-                            <li>Discord: <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline">discord.gg/9QTzR8uwRP</a></li>
+                            <li>Discord: <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" class="text-green-400 hover:underline">discord.com/invite/9QTzR8uwRP</a></li>
                             <li>Telegram: <span class="text-green-400">@DMLoader</span></li>
                             <li>Через форму обратной связи на сайте</li>
                         </ul>
@@ -296,26 +296,30 @@
                         <h3 class="text-2xl font-bold mb-6">Наши контакты</h3>
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300">
-                                    <i class="fab fa-discord text-3xl mr-4 mt-1"></i>
-                                </a>
+                                <i class="fab fa-discord text-3xl text-indigo-400 mr-4 mt-1"></i>
                                 <div>
                                     <h4 class="font-bold">Discord</h4>
-                                    <p class="opacity-80"><a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="hover:underline">discord.gg/9QTzR8uwRP</a></p>
+                                    <p>
+                                        <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" class="text-red-400 hover:text-red-500 hover:underline">https://discord.com/invite/9QTzR8uwRP</a>
+                                    </p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fab fa-telegram text-3xl text-blue-400 mr-4 mt-1"></i>
                                 <div>
                                     <h4 class="font-bold">Telegram</h4>
-                                    <p class="opacity-80">@DMLoader</p>
+                                    <p>
+                                        <a href="https://t.me/DMLoader" target="_blank" class="text-red-400 hover:text-red-500 hover:underline">https://t.me/DMLoader</a>
+                                    </p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-envelope text-3xl text-red-400 mr-4 mt-1"></i>
                                 <div>
                                     <h4 class="font-bold">Email</h4>
-                                    <p class="opacity-80">dmloadercheat@gmail.com</p>
+                                    <p>
+                                        <a href="mailto:dmloadercheat@gmail.com" target="_blank" class="text-red-400 hover:text-red-500 hover:underline">dmloadercheat@gmail.com</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +339,7 @@
                                 <label class="block mb-2">Сообщение</label>
                                 <textarea rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
                             </div>
-                            <a href="https://t.me/DMLoaderSuport" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full download-btn">
+                            <a href="https://t.me/DMLoaderSuport" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full download-btn">
                                 Отправить сообщение
                             </a>
                         </form>
@@ -352,8 +356,8 @@
                     <span class="text-xl font-bold">DMLoader</span>
                 </div>
                 <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
-                    <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-telegram"></i></a>
+                    <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
+                    <a href="https://t.me/DMLoader" target="_blank" class="text-2xl hover:text-green-400"><i class="fab fa-telegram"></i></a>
                     <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="text-sm opacity-70">
@@ -392,11 +396,26 @@
             alert('Мобильное меню будет реализовано в следующих версиях');
         });
 
-        // Отправка формы (перенаправление на Telegram)
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            window.location.href = 'https://t.me/DMLoaderSuport';
-        });
+        // Отправка формы (кнопка "Отправить сообщение" теперь ссылка и открывается в новом окне)
+        // Если вы хотите, чтобы форма обрабатывалась JS перед переходом, можно добавить обработчик
+        // document.getElementById('contact-form').addEventListener('submit', function(e) {
+        //     // e.preventDefault(); // Раскомментируйте, если кнопка будет type="submit"
+        //     // Ваша логика сбора данных формы
+        //     // window.open('https://t.me/DMLoaderSuport', '_blank'); // Если кнопка type="submit"
+        // });
+
+        // Добавим target="_blank" для кнопки-ссылки "Отправить сообщение" в форме, если она не type="submit"
+        const contactFormSendButton = document.querySelector('#contact-form a.download-btn');
+        if (contactFormSendButton) {
+            contactFormSendButton.setAttribute('target', '_blank');
+        }
+
+        // Обновляем ссылку на Telegram в футере для открытия в новом окне
+        const footerTelegramLink = document.querySelector('footer a[href="https://t.me/DMLoader"]');
+        if (footerTelegramLink) {
+             footerTelegramLink.setAttribute('target', '_blank');
+        }
+
     </script>
 </body>
 </html>
