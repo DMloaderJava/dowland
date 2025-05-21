@@ -240,7 +240,7 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden bg-gray-800 bg-opacity-50 rounded-b-lg px-6 py-4">
-                        <p>Для установки на Linux выполните следующие шаги:</p>
+                        <p>Для установка на Linux выполните следующие шаги:</p>
                         <ol class="list-decimal pl-6 mt-2 space-y-2">
                             <li>Скачайте версию для Linux (Ubuntu или универсальную)</li>
                             <li>Откройте терминал в папке с загрузкой</li>
@@ -278,7 +278,7 @@
                     <div class="faq-answer hidden bg-gray-800 bg-opacity-50 rounded-b-lg px-6 py-4">
                         <p>Вы можете обратиться за помощью следующими способами:</p>
                         <ul class="list-disc pl-6 mt-2 space-y-2">
-                            <li>Discord: <a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="text-green-400 hover:underline">discord.gg/9QTzR8uwRP</a></li>
+                            <li>Discord: <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline">discord.gg/9QTzR8uwRP</a></li>
                             <li>Telegram: <span class="text-green-400">@DMLoader</span></li>
                             <li>Через форму обратной связи на сайте</li>
                         </ul>
@@ -296,10 +296,12 @@
                         <h3 class="text-2xl font-bold mb-6">Наши контакты</h3>
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <i class="fab fa-discord text-3xl text-indigo-400 mr-4 mt-1"></i>
+                                <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300">
+                                    <i class="fab fa-discord text-3xl mr-4 mt-1"></i>
+                                </a>
                                 <div>
                                     <h4 class="font-bold">Discord</h4>
-                                    <p class="opacity-80"><a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="hover:underline">discord.gg/9QTzR8uwRP</a></p>
+                                    <p class="opacity-80"><a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="hover:underline">discord.gg/9QTzR8uwRP</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -350,7 +352,7 @@
                     <span class="text-xl font-bold">DMLoader</span>
                 </div>
                 <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="https://discord.gg/9QTzR8uwRP" target="_blank" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
+                    <a href="https://discord.com/invite/9QTzR8uwRP" target="_blank" rel="noopener noreferrer" class="text-2xl hover:text-green-400"><i class="fab fa-discord"></i></a>
                     <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-telegram"></i></a>
                     <a href="#" class="text-2xl hover:text-green-400"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -391,16 +393,9 @@
         });
 
         // Отправка формы (перенаправление на Telegram)
-        // Примечание: Кнопка "Отправить сообщение" является ссылкой и напрямую перенаправляет.
-        // Этот обработчик сработает, если форма будет отправлена другим способом (например, Enter в поле).
         document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Предотвращаем стандартную отправку формы
-            // Здесь можно было бы собрать данные формы, если бы они отправлялись куда-то перед редиректом
-            // const name = this.querySelector('input[type="text"]').value;
-            // const email = this.querySelector('input[type="email"]').value;
-            // const message = this.querySelector('textarea').value;
-            // console.log('Форма отправлена (через JS):', { name, email, message });
-            window.location.href = 'https://t.me/DMLoaderSuport'; // Перенаправляем на Telegram
+            e.preventDefault();
+            window.location.href = 'https://t.me/DMLoaderSuport';
         });
     </script>
 </body>
